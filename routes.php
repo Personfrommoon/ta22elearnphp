@@ -13,6 +13,7 @@ Route::post('/answer', [PublicController::class, 'answer']);
 
 Route::get('/admin/posts', [PostsController::class, 'index']);
 Route::get('/admin/posts/create', [PostsController::class, 'create']);
+Route::get('/admin/posts/view', [PostsController::class, 'show']);
 Route::post('/admin/posts', [PostsController::class, 'store']);
 Route::get('/admin/posts/edit', [PostsController::class, 'edit']);
 Route::post('/admin/posts/edit', [PostsController::class, 'update']);
